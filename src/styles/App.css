@@ -1,0 +1,89 @@
+/* Make sure html, body, #root can stretch so % heights work */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* App wrapper */
+.app-root {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fbc547; /* desktop yellow */
+}
+
+/* Big name in the background */
+.background-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  pointer-events: none;
+}
+
+.background-text__line {
+  font-size: 10rem;
+  line-height: 1;
+  font-weight: 800;
+  color: #ffd975;
+  text-transform: uppercase;
+}
+
+.background-text__line--offset {
+  margin-top: -1.2rem;
+}
+
+/* Layer that centers the window */
+.window-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Popup window */
+.window {
+  width: 40rem;
+  max-width: 90%;
+  height: 24rem;
+  background-color: rgba(255, 255, 255, 0.96);
+  border: 0.25rem solid #000000;
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 0 rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.window__header {
+  margin-bottom: 1rem;
+}
+
+.window__title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.window__body {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+/* Just temp text style; you’ll replace it later */
+.window__placeholder {
+  margin: 0;
+  line-height: 1.4;
+}
