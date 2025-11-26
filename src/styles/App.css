@@ -1,4 +1,3 @@
-/* Make sure html, body, #root can stretch so % heights work */
 html,
 body,
 #root {
@@ -27,21 +26,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-inline: 2rem;
   pointer-events: none;
 }
 
-.background-text__line {
-  font-size: 27rem;
-  line-height: 1;
-  font-weight: 800;
-  color: var(--color-yellow); /* you can keep this or later make another variable if you want */
+.background-text-line {
+  font-family: var(--font-RobotoMono);
+  font-size: 30rem;
+  line-height: 0.85;
+  font-weight: bold;
+  color: #FFD97A;
   text-transform: uppercase;
 }
 
-.background-text__line--offset {
-  margin-top: -1.2rem;
-}
 
 /* Layer that centers the window */
 .window-layer {

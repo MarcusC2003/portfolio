@@ -1,14 +1,13 @@
 .navbar {
   position: absolute;
   left: 50%;
-  bottom: 2rem;
+  bottom: 0.5rem;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 1rem;
 
-  padding-inline: 2rem;
-  padding-block: 0.75rem;
+  padding:0.5rem 1.5rem ;
 
   background-color: #ffffff;       
   border: 0.25rem solid var(--color-black);
@@ -16,11 +15,11 @@
   box-shadow: 0.2rem 0.2rem 0 rgba(0, 0, 0); 
 }
 
-.navbar__button {
-  width: 4rem;
-  height: 4rem;
+.navbar-button {
+  width: 3.7rem;
+  height: 3.7rem;
 
-  border-radius: 999rem;
+  border-radius: 100%;
   border: 0.2rem solid var(--color-black);
 
   background-color: var(--color-purple);
@@ -39,16 +38,16 @@
   box-shadow: 0 0.3rem 0 rgba(0, 0, 0, 0.3);
 }
 
-.navbar__button:hover {
+.navbar-button:hover {
   transform: translateY(-0.15rem);
 }
 
-.navbar__button--active {
+.navbar-button-active {
   background-color: var(--color-pink);
   transform: translateY(-0.2rem);
 }
 
-.navbar__icon {
+.navbar-icon {
   width: 2rem;
   height: 2rem;
   object-fit: contain;

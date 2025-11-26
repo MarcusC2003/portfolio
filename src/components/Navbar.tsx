@@ -31,26 +31,25 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange }) => {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       {navItems.map((item) => {
         const isActive = item.id === activeTab;
 
         return (
-          <button
+          <a
             key={item.id}
-            type="button"
-            className={`navbar__button ${isActive ? "navbar__button--active" : ""}`}
+            className={`navbar-button ${isActive ? "navbar-button-active" : ""}`}
             onClick={() => onTabChange(item.id)}
           >
             <img
               src={item.icon}
               alt={item.label}
-              className="navbar__icon"
+              className="navbar-icon"
             />
-          </button>
+          </a>
         );
       })}
-    </div>
+    </nav>
   );
 };
 
