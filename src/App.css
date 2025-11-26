@@ -4,10 +4,25 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  cursor: url("./cursor/cursor-default.png") 0 0, auto;
 }
 
+p,
+h1,
+textarea {
+  cursor: url("./cursor/cursor-text.png") 25 10, text;
+}
+
+a,
+button,
+.navbar-button {
+  cursor: url("./cursor/cursor-pointer.png") 14 4, pointer;
+}
+
+
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-RobotoMono);
 }
 
 /* App wrapper */

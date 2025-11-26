@@ -24,25 +24,35 @@ const Home: React.FC = () => {
       </div>
       <img className="lightbulb" src={lightbulbOn} alt="lightbulb vector drawing" width="369" height="541" />
     </header>
-    <section id="goals-section" className="goals-section">
+
+
+    <section className="goals-section">
+      
   <div className="goals-card">
-    <h2 className="goals-heading">My Goals</h2>
-    <p className="goals-body">
-      My goal is to become a well-rounded designer and developer
-    </p>
+    <h1 className="goals-title">My Goals</h1>
+    <p className="goals-text">BLAH ABLH BLAH</p>
   </div>
 
-  {/* squiggly bottom */}
-  <div className="goals-wave">
+  {/* used AI to generate wave */}
+   <div className="goals-wave">
     <svg
       viewBox="0 0 1440 320"
       preserveAspectRatio="none"
       className="goals-wave-svg"
     >
       <path
-        d="M0,288 C80,256 160,224 240,224 C320,224 400,256 480,272 C560,288 640,288 720,272 C800,256 880,224 960,224 C1040,224 1120,256 1200,272 C1280,288 1360,288 1440,272 L1440,320 L0,320 Z"
-        fill="#000000"
-      />
+    d="
+      M0 256 
+      C 80 300, 160 300, 240 256
+      S 400 212, 480 256
+      S 640 300, 720 256
+      S 880 212, 960 256
+      S 1120 300, 1200 256
+      S 1360 212, 1440 256
+      V 320 H 0 Z
+    "
+    fill="#000000"
+  />
     </svg>
   </div>
 </section>

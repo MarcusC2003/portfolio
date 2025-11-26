@@ -7,7 +7,7 @@
 
 
 :root {
-  /* Brand Colors */
+  /* colours */
   --color-yellow: #ffcb46;
   --color-purple: #d661ff;
   --color-black: #000000;
@@ -17,6 +17,8 @@
   --color-orange: #ff9f32;
   --color-red: #ff4c4c;
 
+  /* fonts */
   --font-RobotoMono: "RobotoMono-Regular", monospace;
+
 
 }

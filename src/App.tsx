@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Navbar, { type TabId } from "./components/Navbar";
 
 import "./pages/Home";
-import "./styles/App.css";
+import "./App.css";
 import Home from "./pages/Home";
 
 const App: React.FC = () => {

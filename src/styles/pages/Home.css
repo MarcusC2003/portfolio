@@ -42,3 +42,60 @@
 .lightbulb{
   margin-right: 4rem;
 }
+
+/* --- GOALS SECTION  --- */
+.goals-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-orange);
+  border-bottom: 0.25rem solid #000;
+  overflow: hidden;
+}
+
+/* --- CARD POSITIONING --- */
+.goals-card {
+  position: absolute;
+  right: 6rem;
+  top: 6rem;
+  width: 40rem;
+  max-width: 85%;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  border: 0.2rem solid #000;
+  box-shadow: 0.9rem 0.9rem 0 #000;
+  box-sizing: border-box;
+
+  font-family: "RobotoMono", monospace;
+}
+
+/* Heading */
+.goals-title {
+  margin: 0 0 2rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* Body text */
+.goals-text {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+}
+
+/* --- WAVY BOTTOM --- */
+.goals-wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  overflow: hidden;
+}
+
+.goals-wave-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
