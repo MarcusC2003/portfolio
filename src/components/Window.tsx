@@ -15,12 +15,10 @@ const Window: React.FC<WindowProps> = ({ children, title }) => {
           <span className="window-dot window-dot-maximize" />
           <span className="window-dot window-dot-minimize" />
         </div>
-        {title && <span className="window-title">{title}</span>}
+        {/* {title && <span className="window-title">{title}</span>} */}
       </div>
 
-      <div className="window-content">
-        {children}
-      </div>
+      <div className="window-content">{children}</div>
     </div>
   );
 };

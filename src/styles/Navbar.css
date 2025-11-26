@@ -1,34 +1,41 @@
 .navbar {
   position: absolute;
   left: 50%;
-  bottom: 2.5rem;
+  bottom: 2rem;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 1rem;
+
   padding-inline: 2rem;
   padding-block: 0.75rem;
-  background-color: #ffffff;
-  border: 0.25rem solid #000000;
+
+  background-color: #ffffff;       
+  border: 0.25rem solid var(--color-black);
   border-radius: 999rem;
-  box-shadow: 0 0.75rem 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.75rem 0 rgba(0, 0, 0, 0.4); 
 }
 
 .navbar__button {
   width: 3rem;
   height: 3rem;
+
   border-radius: 999rem;
-  border: 0.125rem solid #000000;
-  background-color: #f9a8d4;
+  border: 0.125rem solid var(--color-black);
+
+  background-color: var(--color-purple);
+
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
   outline: none;
   transition:
     transform 0.15s ease,
     background-color 0.15s ease,
     box-shadow 0.15s ease;
+
   box-shadow: 0 0.3rem 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -37,7 +44,7 @@
 }
 
 .navbar__button--active {
-  background-color: #fb7185;
+  background-color: var(--color-pink);
   transform: translateY(-0.2rem);
 }
 

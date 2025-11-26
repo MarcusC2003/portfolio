@@ -1,8 +1,11 @@
 // src/App.tsx
 import React, { useState } from "react";
 import Navbar, { type TabId } from "./components/Navbar";
-import Window from "./components/Window";           // <-- using your real Window component
+import Window from "./components/Window";
+
+import "./pages/Home";
 import "./styles/App.css";
+import Home from "./pages/Home";
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<TabId>("home");
@@ -35,27 +38,7 @@ const App: React.FC = () => {
 
       {/* Window Layer */}
       <div className="window-layer">
-        <Window title={getWindowTitle(activeTab)}>
-          {activeTab === "home" && (
-            <h1 style={{ fontSize: "2rem", margin: 0 }}>home</h1>
-          )}
-
-          {activeTab === "about" && (
-            <p>About page content goes here.</p>
-          )}
-
-          {activeTab === "resume" && (
-            <p>Resume page content goes here.</p>
-          )}
-
-          {activeTab === "portfolio" && (
-            <p>Portfolio page content goes here.</p>
-          )}
-
-          {activeTab === "contact" && (
-            <p>Contact page content goes here.</p>
-          )}
-        </Window>
+        <Home />
       </div>
 
       {/* Bottom navbar */}

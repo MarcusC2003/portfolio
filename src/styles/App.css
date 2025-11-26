@@ -17,7 +17,7 @@ body {
   min-height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: #fbc547; /* desktop yellow */
+  background-color: var(--color-yellow); /* desktop yellow from :root */
 }
 
 /* Big name in the background */
@@ -32,10 +32,10 @@ body {
 }
 
 .background-text__line {
-  font-size: 10rem;
+  font-size: 27rem;
   line-height: 1;
   font-weight: 800;
-  color: #ffd975;
+  color: var(--color-yellow); /* you can keep this or later make another variable if you want */
   text-transform: uppercase;
 }
 
@@ -50,40 +50,4 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* Popup window */
-.window {
-  width: 40rem;
-  max-width: 90%;
-  height: 24rem;
-  background-color: rgba(255, 255, 255, 0.96);
-  border: 0.25rem solid #000000;
-  border-radius: 1.5rem;
-  box-shadow: 0 1rem 0 rgba(0, 0, 0, 0.4);
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.window__header {
-  margin-bottom: 1rem;
-}
-
-.window__title {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.window__body {
-  flex: 1;
-  font-size: 0.9rem;
-  color: #333333;
-}
-
-/* Just temp text style; you’ll replace it later */
-.window__placeholder {
-  margin: 0;
-  line-height: 1.4;
 }
