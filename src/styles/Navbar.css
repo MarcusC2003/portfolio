@@ -13,15 +13,15 @@
   background-color: #ffffff;       
   border: 0.25rem solid var(--color-black);
   border-radius: 999rem;
-  box-shadow: 0 0.75rem 0 rgba(0, 0, 0, 0.4); 
+  box-shadow: 0.2rem 0.2rem 0 rgba(0, 0, 0); 
 }
 
 .navbar__button {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 
   border-radius: 999rem;
-  border: 0.125rem solid var(--color-black);
+  border: 0.2rem solid var(--color-black);
 
   background-color: var(--color-purple);
 
@@ -49,7 +49,7 @@
 }
 
 .navbar__icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   object-fit: contain;
 }
