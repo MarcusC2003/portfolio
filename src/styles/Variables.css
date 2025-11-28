@@ -6,6 +6,13 @@
 }
 
 
+@font-face {
+  font-family: "JustMeAgainDownHere";
+  src: url("../assets/fonts/JustMeAgainDownHere-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+
 :root {
   /* colours */
   --color-yellow: #ffcb46;
@@ -18,7 +25,8 @@
   --color-red: #ff4c4c;
 
   /* fonts */
-  --font-RobotoMono: "RobotoMono-Regular", monospace;
+  --font-RobotoMono: "RobotoMono-Regular", "monospace";
+  --font-JustMeAgainDownHere: "JustMeAgainDownHere", "sans-serif";
 
 
 }

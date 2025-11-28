@@ -9,22 +9,6 @@ import Home from "./pages/Home";
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<TabId>("home");
 
-  // const getWindowTitle = (tab: TabId) => {
-  //   switch (tab) {
-  //     case "about":
-  //       return "About Me";
-  //     case "resume":
-  //       return "Resume";
-  //     case "portfolio":
-  //       return "Portfolio";
-  //     case "contact":
-  //       return "Contact";
-  //     case "home":
-  //     default: 
-  //       return "Home";
-  //   }
-  // };
-
   return (
     <div className="app-root">
       {/* Big background name text */}

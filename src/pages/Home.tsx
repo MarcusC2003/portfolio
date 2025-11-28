@@ -7,12 +7,15 @@ import Window from "../components/Window.tsx";
 import lightbulbOn from "../assets/images/home/lightbulb-on.png";
 import goalPath from "../assets/images/home/Goal-Path.png";
 import goalPin from "../assets/images/home/Goal-Pin.png";
+// import buttonDrawing from "../assets/images/home/Button-Drawing.png";
+import portfolioArrow from "../assets/images/home/Portfolio_Arrow.png";
+import portfolioImage from "../assets/images/portfolio/asana-feature-design/Asana-Feature-Proposal-Poster.png";
 
 
 
 const Home: React.FC = () => {
   return (
-    <Window>
+    <Window >
     <header className="intro">
       <div className="intro-content">
         <p className="intro-heading">Hi! my name is</p>
@@ -47,6 +50,56 @@ const Home: React.FC = () => {
       </p>
     </div>
   </div>
+</section>
+<section className="project-section">
+
+  <div className="project-card">
+    
+    <h2 className="project-title">#recent_project</h2>
+
+    {/* Project preview image */}
+    <img
+      src={portfolioImage}
+      alt="Asana new feature proposal slide"
+      className="project-image"
+    />
+
+    {/* Description */}
+    <p className="project-description">
+      In this project, my team carried out user research and developed
+      mockups to propose a new feature for Asana.
+    </p>
+
+    {/* Tags */}
+    <ul className="project-tags">
+      <li className="project-tag">#ui</li>
+      <li className="project-tag">#ux</li>
+      <li className="project-tag">#user_research</li>
+      <li className="project-tag">#figma</li>
+    </ul> 
+
+  </div>
+
+  {/* Right side “More projects” */}
+  <div className="project-side">
+    <p className="project-more-text">
+      Check out more of<br />my projects here
+    </p>
+
+    <img
+      src={portfolioArrow}
+      alt="arrow pointing to portfolio button"
+      className="project-arrow"
+    />
+
+    <a
+      href="#portfolio"
+      className="project-portfolio-link"
+    >
+      My Portfolio
+    </a>
+  </div>
+
 </section>
     </Window>
   );

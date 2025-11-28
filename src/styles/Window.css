@@ -6,11 +6,11 @@
   background-color: #ffffff;             
   border: 0.25rem solid var(--color-black);
   border-radius: 1.5rem;
-
   overflow: hidden;
   display: flex;
   flex-direction: column;
   box-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0);
+  
 }
 
 
@@ -62,4 +62,25 @@
   flex: 1;
   background-color: #ffffff;
   overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+/* scrollbar styling */
+.window-content::-webkit-scrollbar {
+  position: absolute;
+  width: 1rem;
+  background-color: transparent;
+}
+
+.window-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.window-content::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 1rem;
+  border: 0.25rem solid #ffffff;
+}
+
+.window-content::-webkit-scrollbar-thumb:hover {
+  background: #333;
 }
