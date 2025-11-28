@@ -6,7 +6,7 @@ interface WindowProps {
   title?: string;
 }
 
-const Window: React.FC<WindowProps> = ({ children, title }) => {
+const Window: React.FC<WindowProps> = ({ children }) => {
   return (
     <div className="window">
       <div className="window-topbar">
@@ -15,7 +15,6 @@ const Window: React.FC<WindowProps> = ({ children, title }) => {
           <span className="window-dot window-dot-maximize" />
           <span className="window-dot window-dot-minimize" />
         </div>
-        {/* {title && <span className="window-title">{title}</span>} */}
       </div>
 
       <div className="window-content">{children}</div>
