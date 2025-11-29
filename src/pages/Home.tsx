@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import React from "react";
 import "../styles/pages/Home.css";
 import Window from "../components/Window.tsx";
@@ -7,9 +6,17 @@ import Window from "../components/Window.tsx";
 import lightbulbOn from "../assets/images/home/lightbulb-on.png";
 import goalPath from "../assets/images/home/Goal-Path.png";
 import goalPin from "../assets/images/home/Goal-Pin.png";
+
 // import buttonDrawing from "../assets/images/home/Button-Drawing.png";
 import portfolioArrow from "../assets/images/home/Portfolio_Arrow.png";
 import portfolioImage from "../assets/images/portfolio/asana-feature-design/Asana-Feature-Proposal-Poster.png";
+import cardVolleyballImg from "../assets/images/home/Card-Volleyball.png";
+import cardPlantsImg from "../assets/images/home/Card-IndoorPlants.png"; // Note: Check if this file ends in .png
+import cardPickleballImg from "../assets/images/home/Card-Pickleball.png";
+import cardCookingImg from "../assets/images/home/Card-Cooking.png";
+import handBaseImg from "../assets/images/home/Hand.png";
+import handThumbImg from "../assets/images/home/Thumb.png";
+
 
 
 
@@ -82,8 +89,9 @@ const Home: React.FC = () => {
 
   {/* Right side “More projects” */}
   <div className="project-side">
+    <div className="project-info-container">
     <p className="project-more-text">
-      Check out more of<br />my projects here
+      Check out more of my projects here
     </p>
 
     <img
@@ -98,9 +106,55 @@ const Home: React.FC = () => {
     >
       My Portfolio
     </a>
+    </div>
   </div>
 
 </section>
+<section className="interests-section">
+        
+        {/* Top Left Text Box */}
+        <div className="interests-intro-card">
+          <h2 className="interests-heading">My Interests</h2>
+          <p className="interests-body">
+            When I'm not coding or designing, I staying active as well as picking up new hobbies.
+          </p>
+        </div>
+
+        {/* Container for Hand and Cards */}
+        <div className="hand-container">
+          
+          {/* LAYER 1 (Bottom): Main Hand Base */}
+          <img src={handBaseImg} alt="" className="hand-base" />
+
+          {/* LAYER 2 (Middle): The Cards Fan */}
+          <div className="cards-fan">
+              {/* Card 1: Volleyball */}
+              <div className="interest-card-wrapper card-volleyball">
+                <img src={cardVolleyballImg} alt="Volleyball interest card" className="card-img" />
+              </div>
+
+              {/* Card 2: Indoor Plants */}
+              <div className="interest-card-wrapper card-plants">
+                <img src={cardPlantsImg} alt="Indoor Plants interest card" className="card-img" />
+              </div>
+
+              {/* Card 3: Pickleball */}
+              <div className="interest-card-wrapper card-pickleball">
+                <img src={cardPickleballImg} alt="Pickleball interest card" className="card-img" />
+              </div>
+
+              {/* Card 4: Cooking */}
+              <div className="interest-card-wrapper card-cooking">
+                 <img src={cardCookingImg} alt="Cooking interest card" className="card-img" />
+              </div>
+          </div>
+
+          {/* LAYER 3 (Top): The Thumb overlapping the cards */}
+          <img src={handThumbImg} alt="Hand holding cards" className="hand-thumb" />
+
+        </div>
+      </section>
+
     </Window>
   );
 };

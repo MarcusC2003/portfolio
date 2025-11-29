@@ -11,6 +11,8 @@ const App: React.FC = () => {
 
   return (
     <div className="app-root">
+      <Navbar activeTab={activeTab} onTabChange={setActiveTab} />
+
       {/* Big background name text */}
       <div className="background-text">
         <span className="background-text-line">MARCUS</span>
@@ -22,8 +24,6 @@ const App: React.FC = () => {
         <Home />
       </div>
 
-      {/* Bottom navbar */}
-      <Navbar activeTab={activeTab} onTabChange={setActiveTab} />
     </div>
   );
 };
