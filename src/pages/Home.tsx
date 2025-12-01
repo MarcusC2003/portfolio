@@ -110,49 +110,55 @@ const Home: React.FC = () => {
   </div>
 
 </section>
-<section className="interests-section">
-        
-        {/* Top Left Text Box */}
-        <div className="interests-intro-card">
-          <h2 className="interests-heading">My Interests</h2>
-          <p className="interests-body">
-            When I'm not coding or designing, I staying active as well as picking up new hobbies.
+  <section className="interests-section">
+    <div className="interests-container">
+        {/* left text card */}
+        <div className="interests-text-card">
+          <h2 className="interests-title">My Interests</h2>
+          <p className="interests-text">
+            When I’m not coding or designing, I like staying active and picking
+            up new hobbies like volleyball, pickleball, indoor plants, and
+            cooking.
           </p>
         </div>
 
-        {/* Container for Hand and Cards */}
-        <div className="hand-container">
-          
-          {/* LAYER 1 (Bottom): Main Hand Base */}
-          <img src={handBaseImg} alt="" className="hand-base" />
-
-          {/* LAYER 2 (Middle): The Cards Fan */}
-          <div className="cards-fan">
-              {/* Card 1: Volleyball */}
-              <div className="interest-card-wrapper card-volleyball">
-                <img src={cardVolleyballImg} alt="Volleyball interest card" className="card-img" />
-              </div>
-
-              {/* Card 2: Indoor Plants */}
-              <div className="interest-card-wrapper card-plants">
-                <img src={cardPlantsImg} alt="Indoor Plants interest card" className="card-img" />
-              </div>
-
-              {/* Card 3: Pickleball */}
-              <div className="interest-card-wrapper card-pickleball">
-                <img src={cardPickleballImg} alt="Pickleball interest card" className="card-img" />
-              </div>
-
-              {/* Card 4: Cooking */}
-              <div className="interest-card-wrapper card-cooking">
-                 <img src={cardCookingImg} alt="Cooking interest card" className="card-img" />
-              </div>
+        {/* right card fan */}
+        <div className="interests-hand-wrapper">
+          <div className="card-list">
+            <img
+              src={cardVolleyballImg}
+              alt="Volleyball card"
+              className="interest-card card-volleyball"
+            />
+            <img
+              src={cardPlantsImg}
+              alt="Indoor plants card"
+              className="interest-card card-plants"
+            />
+            <img
+              src={cardPickleballImg}
+              alt="Pickleball card"
+              className="interest-card card-pickleball"
+            />
+            <img
+              src={cardCookingImg}
+              alt="Cooking card"
+              className="interest-card card-cooking"
+            />
           </div>
 
-          {/* LAYER 3 (Top): The Thumb overlapping the cards */}
-          <img src={handThumbImg} alt="Hand holding cards" className="hand-thumb" />
-
+          <img
+            src={handBaseImg}
+            alt="Hand holding cards"
+            className="interests-hand-base"
+          />
+          <img
+            src={handThumbImg}
+            alt="Thumb"
+            className="interests-hand-thumb"
+          />
         </div>
+      </div>
       </section>
 
     </Window>

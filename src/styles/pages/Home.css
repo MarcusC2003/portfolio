@@ -105,7 +105,7 @@ header,section{
 
 /* Title */
 .goals-title {
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem 0;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -124,7 +124,7 @@ header,section{
 
 .project-section {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.8fr 1fr;
   gap: 1rem;
   background-color: var(--color-purple);
   width: 100%;
@@ -136,18 +136,18 @@ header,section{
 .project-card {
   justify-self: center;
   align-self: center;
-  background: #ffffff;
+  background: white;
   border: 0.22rem solid #000;
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0.45rem 0.45rem 0 #000;
   font-family: var(--font-RobotoMono);
-  width:38rem;
+  width: 73%;
   margin-left:1rem;
 }
 
 .project-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-top:0;
   margin-bottom: 1.6rem;
   font-weight: 700;
@@ -167,7 +167,7 @@ header,section{
 
 /* Description */
 .project-description {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 1.6rem;
 }
@@ -189,7 +189,8 @@ header,section{
   padding: 0.45rem 1rem;
   border-radius: 1rem;
   border: 0.18rem solid #000;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
   font-family: var(--font-RobotoMono);
   box-shadow: 0.18rem 0.18rem 0 #000;
 }
@@ -214,7 +215,7 @@ header,section{
 }
 .project-more-text {
   font-family: var(--font-JustMeAgainDownHere);
-  font-size: 4rem; 
+  font-size: 3rem; 
   line-height: 1.2;
   width:20rem;
   margin-bottom:0rem;
@@ -244,189 +245,133 @@ header,section{
 }
 
 .project-portfolio-link:hover {
-  transform: translateY(-0.15rem);
+  transform: translateY(-0.25rem);
 }
 .project-portfolio-link:active {
-  transform: translateY(0.1rem);
+  transform: translateY(0.2rem);
+  box-shadow: 0rem 0rem 0.1rem #000;
+
 }
 
 /* ========================= */
-/* Interests Section         */
+/*      Interests Section    */
 /* ========================= */
 
 .interests-section {
-  position: relative;
-  width: 100%;
-  height: 100vh; 
-  background-color: #00C4CC; /* Cyan background */
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-cyan); 
+  font-family: var(--font-RobotoMono);
+  width:100%;
+  height:100%;
+}
+.interests-container{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end; 
-  overflow: hidden;
+  gap: 16rem;
+  width:100%;
+  height:100%;
 }
 
-/* --- The Text Box (Top Left) --- */
-.interests-intro-card {
-  position: absolute;
-  top: 5rem;
-  left: 5rem;
+.interests-text-card {
+  width: 80%;
+  max-width: 45rem;
   background: #ffffff;
-  border: 0.22rem solid #000;
-  border-radius: 1rem;
-  padding: 2rem;
-  box-shadow: 0.45rem 0.45rem 0 #000;
-  font-family: var(--font-RobotoMono);
-  width: 28rem;
-  z-index: 10; 
+  border-radius: 1.8rem;
+  border: 0.25rem solid #000;
+  box-shadow: 0.5rem 0.5rem 0 #000;
+  padding: 2rem 2.8rem;
+  margin-top: 2rem;
 }
 
-.interests-heading {
-  font-family: var(--font-RobotoMono);
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin: 0 0 1rem 0;
+.interests-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.3rem;
 }
 
-.interests-body {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  font-weight: 500;
+.interests-text {
   margin: 0;
+  font-size: 1rem;
+  line-height: 1.7rem;
 }
 
-/* ========================= */
-/* Interests Section         */
-/* ========================= */
+/* bottom: hand + cards */
 
-.interests-section {
+.interests-hand-wrapper {
   position: relative;
+  width: 32rem;
+  height: 20rem;
+}
+
+.interests-hand-base {
+  position: absolute;
+  width: 23em;
+  bottom: 0;
+  left: 5rem;
+}
+
+.interests-hand-thumb {
+  position: absolute;
+  width: 23rem;
+  bottom: 0rem;
+  left: 5rem;
+  z-index: 3;
+}
+.card-list {
+  position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #00C4CC;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  overflow: hidden;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 2;
 }
-
-/* --- The Text Box (Top Left) --- */
-.interests-intro-card {
+/* cards */
+.interest-card {
   position: absolute;
-  /* top: 5rem;
-  left: 5rem; */
-  background: #ffffff;
-  border: 0.22rem solid #000;
-  border-radius: 1rem;
-  padding: 2rem;
-  box-shadow: 0.45rem 0.45rem 0 #000;
-  font-family: var(--font-RobotoMono);
-  width: 28rem;
-  z-index: 10;
+  width: 13rem;
+  transform-origin: 50% 80%;
+  transition: transform 180ms ease-out, filter 180ms ease-out;
 }
-
-.interests-heading {
-  font-family: var(--font-RobotoMono);
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin: 0 0 1rem 0;
-}
-
-.interests-body {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  font-weight: 500;
-  margin: 0;
-}
-
-/* --- The Container for Hand & Cards --- */
-.hand-container {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-bottom: -2rem;
-  bottom:20rem;
-}
-
-/* --- Hand Images Layering --- */
-.hand-base {
-  position: absolute;
-  bottom: 0;
-  width: 25rem;
-  height: auto;
-  z-index: 5; /* Layer 1 */
-}
-
-.hand-thumb {
-  position: absolute;
-  bottom: 0;
-  width: 25rem;
-  height: auto;
-  z-index: 50; /* Layer 3 */
-  pointer-events: none;
-}
-
-/* --- Cards Fan Container --- */
-.cards-fan {
-  position: relative;
-  z-index: 10;
-}
-
-/* --- Individual Card Wrapper --- */
-.interest-card-wrapper {
-  position: absolute;
-  width: 16rem;
-  height: auto;
-  
-  /* Animation */
-  transform-origin: bottom center;
-  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), z-index 0s;
-  cursor: pointer;
-  
-  /* Centering logic */
-  left: -8rem;
-  bottom: 0;
-}
-
-.card-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.3));
-}
-
 
 .card-volleyball {
-  transform: translateX(-10rem) translateY(2rem) rotate(-20deg);
-  z-index: 1;
+  left: 4rem;
+  bottom: 5rem;
+  transform: rotate(-35deg);
 }
 
 .card-plants {
-  transform: translateX(-3.5rem) translateY(0rem) rotate(-7deg);
-  z-index: 2;
+  left: 8rem;
+  bottom: 7rem;
+  transform: rotate(-15deg);
 }
 
 .card-pickleball {
-  transform: translateX(3.5rem) translateY(0rem) rotate(7deg);
-  z-index: 3;
+  left: 11rem;
+  bottom: 7rem;
+  transform: rotate(15deg);
 }
 
 .card-cooking {
-  transform: translateX(10rem) translateY(2rem) rotate(20deg);
-  z-index: 4;
-}
-.interest-card-wrapper:hover,
-.interest-card-wrapper:focus {
-  z-index: 60 ;
-  transform: translateY(-10rem) scale(1.15) rotate(0deg);
+  left: 15rem;
+  bottom: 5rem;
+  transform: rotate(35deg);
 }
 
-.interest-card-wrapper:focus {
-    outline: 2px solid #000;
-    outline-offset: 3px;
+/* Hover: card "sticks out" along its angle */
+.card-volleyball:hover {
+  transform: rotate(-40deg) translateY(-2rem);
 }
 
+.card-plants:hover {
+  transform: rotate(-25deg) translateY(-2rem);
+}
+
+.card-pickleball:hover {
+  transform: rotate(8deg) translateY(-2rem);
+}
+
+.card-cooking:hover {
+  transform: rotate(40deg) translateY(-2rem);
+}

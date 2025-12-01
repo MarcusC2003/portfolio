@@ -15,26 +15,26 @@ textarea {
 
 a,
 button,
-.navbar-button {
+.navbar-button,
+.interest-card {
   cursor: url("./cursor/cursor-pointer.png") 14 4, pointer;
 }
 
 
+/* window styling */
 
 body {
   font-family: var(--font-RobotoMono);
 }
 
-/* App wrapper */
 .app-root {
   position: relative;
   min-height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: var(--color-yellow); /* desktop yellow from :root */
+  background-color: var(--color-yellow); 
 }
 
-/* Big name in the background */
 .background-text {
   position: absolute;
   inset: 0;
@@ -54,7 +54,6 @@ body {
 }
 
 
-/* Layer that centers the window */
 .window-layer {
   position: absolute;
   inset: 0;
