@@ -7,11 +7,10 @@ import lightbulbOn from "../assets/images/home/lightbulb-on.png";
 import goalPath from "../assets/images/home/Goal-Path.png";
 import goalPin from "../assets/images/home/Goal-Pin.png";
 
-// import buttonDrawing from "../assets/images/home/Button-Drawing.png";
 import portfolioArrow from "../assets/images/home/Portfolio_Arrow.png";
 import portfolioImage from "../assets/images/portfolio/asana-feature-design/Asana-Feature-Proposal-Poster.png";
 import cardVolleyballImg from "../assets/images/home/Card-Volleyball.png";
-import cardPlantsImg from "../assets/images/home/Card-IndoorPlants.png"; // Note: Check if this file ends in .png
+import cardPlantsImg from "../assets/images/home/Card-IndoorPlants.png"; 
 import cardPickleballImg from "../assets/images/home/Card-Pickleball.png";
 import cardCookingImg from "../assets/images/home/Card-Cooking.png";
 import handBaseImg from "../assets/images/home/Hand.png";
