@@ -1,5 +1,9 @@
 header,section{
   scroll-snap-align: start;
+  
+}
+.window-content {
+  scroll-snap-type: y proximity;
 }
 
 
