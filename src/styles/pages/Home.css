@@ -252,6 +252,11 @@ header,section{
   box-shadow: 0rem 0rem 0.1rem #000;
 
 }
+.project-portfolio-link:focus {
+  transform: translateY(-0.25rem);
+  border: var(--color-black) 0.3rem solid;
+
+}
 
 /* -------------------------- */
 /*      Interests Section    */

@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import Navbar, { type TabId } from "./components/Navbar";
 
-import "./pages/Home";
 import "./App.css";
 import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<TabId>("home");
@@ -13,17 +13,15 @@ const App: React.FC = () => {
     <div className="app-root">
       <Navbar activeTab={activeTab} onTabChange={setActiveTab} />
 
-      {/* Big background name text */}
       <div className="background-text">
         <span className="background-text-line">MARCUS</span>
         <span className="background-text-line">CHAN</span>
       </div>
 
-      {/* Window Layer */}
       <div className="window-layer">
-        <Home />
+        {activeTab === "home" && <Home />}
+        {activeTab === "portfolio" && <Portfolio />}
       </div>
-
     </div>
   );
 };

@@ -40,6 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange }) => {
             key={item.id}
             className={`navbar-button ${isActive ? "navbar-button-active" : ""}`}
             onClick={() => onTabChange(item.id)}
+            tabIndex={0}
           >
             <img
               src={item.icon}

@@ -27,9 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 
-  outline: none;
   transition:
     transform 0.15s ease,
     background-color 0.15s ease,
@@ -40,6 +38,9 @@
 
 .navbar-button:hover {
   transform: translateY(-0.15rem);
+}
+.navbar-button:focus {
+  border: var(--color-black) 0.3rem solid;
 }
 
 .navbar-button-active {
