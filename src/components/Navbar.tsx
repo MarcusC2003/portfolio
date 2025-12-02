@@ -39,7 +39,8 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange }) => {
           <a
             key={item.id}
             className={`navbar-button ${isActive ? "navbar-button-active" : ""}`}
-            onClick={() => onTabChange(item.id)}
+            onClick={() => {onTabChange(item.id)}}
+            onKeyDown={(e) => {if(e.key === 'Enter' || e.key === ' ') { onTabChange(item.id); }}}
             tabIndex={0}
           >
             <img
