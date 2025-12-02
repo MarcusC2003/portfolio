@@ -51,9 +51,6 @@ header,section{
   font-weight: 400;
 
 }
-.lightbulb{
-  margin-right: 4rem;
-}
 
 /* -------------------------- */
 /*      Goals Section         */
@@ -383,4 +380,47 @@ header,section{
 
 .card-cooking:hover {
   transform: rotate(40deg) translateY(-2rem);
+}
+
+
+
+/*  -------------- Mediq queries ----------- */
+
+@media (max-width:67.5rem) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    height:fit-content;
+    justify-content: flex-start;
+    gap:0;
+
+  }
+
+  .intro-content {
+    width: auto;
+    margin-bottom: 0;
+  }
+  .lightbulb{
+    margin:2rem 0 4rem 0;
+  }
+
+  .goals-grid {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    padding: 2rem;
+  }
+
+  .project-section {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .project-side {
+    margin-top: 2rem;
+  }
+  
 }

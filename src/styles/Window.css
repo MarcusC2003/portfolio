@@ -1,3 +1,69 @@
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: url("./cursor/cursor-default.png") 0 0, auto;
+}
+
+p,
+h1,
+textarea {
+  cursor: url("./cursor/cursor-text.png") 25 10, text;
+}
+
+a,
+button,
+.navbar-button,
+.interest-card {
+  cursor: url("./cursor/cursor-pointer.png") 14 4, pointer;
+}
+
+
+/* window styling */
+
+body {
+  font-family: var(--font-RobotoMono);
+}
+
+.app-root {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--color-yellow); 
+}
+
+.background-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.background-text-line {
+  font-family: var(--font-RobotoMono);
+  font-size: 30rem;
+  line-height: 0.85;
+  font-weight: bold;
+  color: #FFD97A;
+  text-transform: uppercase;
+}
+
+
+.window-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .window {
   width: 80rem;
   max-width: 90%;
