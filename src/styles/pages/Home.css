@@ -412,15 +412,59 @@ header,section{
 
   .project-section {
     grid-template-columns: 1fr;
+    height: fit-content;
+  }
+  .project-info-container{
+    margin:0 0 3rem 0 ;
   }
 
   .project-card {
-    width: 90%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 4rem  auto;
+  }
+  .interests-text-card{
+    width: 70%;
+    
+  }
+  .project-more-text {
+    font-size: 3rem;
+    margin:0;
+  }
+  .interests-section {
+    height: fit-content;
+  }
+  .interests-container{
+    gap: 12rem;
+  }
+  .interest-card{
+    width:11rem;
+    
+  }
+  .interests-hand-base{
+    width:15rem;
+    margin:0 0 0 3rem;
+    
+  }
+  .interests-hand-thumb{
+    width:15rem;
+    margin:0 0 0 3rem;
+
+  }
+}
+@media (max-width:43rem) {
+ .interest-card{
+    width:6rem;
+    
+  }
+  .interests-hand-base{
+    width:10rem;
+    margin:0 0 0 3rem;
+    
+  }
+  .interests-hand-thumb{
+    width:10rem;
+    margin:0 0 0 3rem;
+
   }
 
-  .project-side {
-    margin-top: 2rem;
-  }
-  
 }
