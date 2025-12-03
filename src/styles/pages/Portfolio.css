@@ -15,7 +15,8 @@
 .case-inner {
   width: 90%; 
   max-width: 55rem;
-  margin: 3rem auto;
+  margin: 0 auto;
+  padding-top:2rem;
 }
 
 
@@ -143,4 +144,13 @@
   height: auto;
   border: 0.2rem solid #000000;
   border-radius: 0.5rem;
+}
+
+@media (max-width:40rem) {
+  .content-image {
+    width: 90%;
+  }
+  .case-hero-card {
+    width: 90%;
+  }
 }

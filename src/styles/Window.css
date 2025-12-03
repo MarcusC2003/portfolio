@@ -65,9 +65,9 @@ body {
 
 
 .window {
-  width: 80rem;
-  max-width: 90%;
-  height: 50rem;
+  width: 70vw;
+  max-width: 95%;
+  height: 80vh;
 
   background-color: #ffffff;             
   border: 0.25rem solid var(--color-black);
@@ -150,3 +150,16 @@ body {
   background: #333;
 }
 
+
+@media (max-width: 80rem) {
+  .window {
+    width: 90vw;
+    height: 85vh;
+  }
+}
+@media (max-width: 22.5rem) {
+  .window {
+    width: 100vw;
+    height: 100vh;
+  }
+}
