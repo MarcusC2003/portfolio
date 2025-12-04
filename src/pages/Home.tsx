@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/pages/Home.css";
 import Window from "../components/Window.tsx";
 
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     document.title = "Home";
   }, []);
+  const navigate = useNavigate();
 
   return (
     <Window>
@@ -107,7 +109,7 @@ const Home: React.FC = () => {
               className="project-arrow"
             />
 
-            <a href="#portfolio" className="project-portfolio-link">
+            <a className="project-portfolio-link" onClick={() => navigate("/portfolio")}>
               My Portfolio
             </a>
           </div>
