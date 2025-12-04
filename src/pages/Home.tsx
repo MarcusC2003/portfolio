@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/pages/Home.css";
 import Window from "../components/Window.tsx";
 
@@ -16,7 +16,12 @@ import cardCookingImg from "../assets/images/home/Card-Cooking.png";
 import handBaseImg from "../assets/images/home/Hand.png";
 import handThumbImg from "../assets/images/home/Thumb.png";
 
+
 const Home: React.FC = () => {
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
+
   return (
     <Window>
       <header className="intro">

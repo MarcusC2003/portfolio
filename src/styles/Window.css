@@ -21,14 +21,13 @@ button,
   cursor: url("./cursor/cursor-pointer.png") 14 4, pointer;
 }
 
-
 /* window styling */
 
 body {
   font-family: var(--font-RobotoMono);
 }
 
-.app-root {
+.window-container {
   position: relative;
   min-height: 100%;
   width: 100%;
@@ -127,7 +126,6 @@ body {
   flex: 1;
   background-color: #ffffff;
   overflow-y: auto;
-  scroll-snap-type: y mandatory;
 }
 /* scrollbar styling */
 .window-content::-webkit-scrollbar {

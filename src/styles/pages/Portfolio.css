@@ -1,7 +1,3 @@
-.window-content {
-  /* scroll-snap-type: none; */
-}
-
 
 /* Whole page inside the Window */
 .case-page {
@@ -19,6 +15,10 @@
   padding-top:2rem;
 }
 
+/* remove auto snap */
+.portfolio-window-content {
+  scroll-snap-type: none;
+}
 
 /* ---------------- Header: pfp, name/date + title + hero ------------- */
 

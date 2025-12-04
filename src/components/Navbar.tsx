@@ -1,56 +1,33 @@
 // src/components/Navbar.tsx
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 
-// import aboutIcon from "../assets/icons/nav/about.png";
-// import resumeIcon from "../assets/icons/nav/resume.png";
 import homeIcon from "../assets/icons/nav/home.png";
 import portfolioIcon from "../assets/icons/nav/portfolio.png";
-// import emailIcon from "../assets/icons/nav/contact.png";
 
-export type TabId = "about" | "resume" | "home" | "portfolio" | "contact";
-
-type NavItem = {
-  id: TabId;
-  label: string;
-  icon: string;
-};
-
-const navItems: NavItem[] = [
-  // { id: "about", label: "About", icon: aboutIcon },
-  // { id: "resume", label: "Resume", icon: resumeIcon },
-  { id: "home", label: "Home", icon: homeIcon },
-  { id: "portfolio", label: "Portfolio", icon: portfolioIcon },
-  // { id: "contact", label: "Contact", icon: emailIcon },
-];
-
-interface NavbarProps {
-  activeTab: TabId;
-  onTabChange: (id: TabId) => void;
-}
-
-const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange }) => {
+const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
-      {navItems.map((item) => {
-        const isActive = item.id === activeTab;
+      
+      <NavLink
+        to="/home"
+        className={({ isActive }) =>
+          `navbar-button ${isActive ? "navbar-button-active" : ""}`
+        }
+      >
+        <img src={homeIcon} alt="Home" className="navbar-icon" />
+      </NavLink>
 
-        return (
-          <a
-            key={item.id}
-            className={`navbar-button ${isActive ? "navbar-button-active" : ""}`}
-            onClick={() => {onTabChange(item.id)}}
-            onKeyDown={(e) => {if(e.key === 'Enter' || e.key === ' ') { onTabChange(item.id); }}}
-            tabIndex={0}
-          >
-            <img
-              src={item.icon}
-              alt={item.label}
-              className="navbar-icon"
-            />
-          </a>
-        );
-      })}
+      <NavLink
+        to="/portfolio"
+        className={({ isActive }) =>
+          `navbar-button ${isActive ? "navbar-button-active" : ""}`
+        }
+      >
+        <img src={portfolioIcon} alt="Portfolio" className="navbar-icon" />
+      </NavLink>
+
     </nav>
   );
 };

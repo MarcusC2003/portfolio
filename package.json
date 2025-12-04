@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage":"https://marcusc2003.github.io/portfolio/",
+  "homepage": "https://marcusc2003.github.io/portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,7 +15,8 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.10.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

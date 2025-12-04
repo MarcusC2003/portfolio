@@ -14,7 +14,7 @@ import Feature from "../assets/images/portfolio/asana-feature-design/Feature.png
 
 const Portfolio: React.FC = () => {
   return (
-    <Window>
+    <Window contentClassName="portfolio-window-content">
       <section className="case-page">
         {/* back arrow */}
         {/* <a
