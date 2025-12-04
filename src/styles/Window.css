@@ -63,11 +63,11 @@ body {
   justify-content: center;
 }
 
-
+/* Window Element */
 .window {
   width: 70vw;
   max-width: 95%;
-  height: 80vh;
+  height: 85vh;
 
   background-color: #ffffff;             
   border: 0.25rem solid var(--color-black);
