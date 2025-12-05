@@ -19,7 +19,7 @@
 /* profile */
 
 .contact-profile-wrapper {
-  flex-shrink: 0;
+  flex-shrink: 0;/*keep from shrinking*/
   width: 16rem;
   height: 16rem;
   border-radius: 50%;
