@@ -1,4 +1,3 @@
-// src/components/Navbar.tsx
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
@@ -10,6 +9,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       
+      {/* https://reactrouter.com/api/components/NavLink */}
       <NavLink
         to="/home"
         className={({ isActive }) =>

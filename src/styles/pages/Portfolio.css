@@ -1,5 +1,4 @@
 
-/* Whole page inside the Window */
 .case-page {
   position: relative;
   background: #ffffff;
@@ -7,7 +6,6 @@
   font-family: var(--font-RobotoMono, system-ui, sans-serif);
 }
 
-/* Content width */
 .case-inner {
   width: 90%; 
   max-width: 55rem;
@@ -15,7 +13,6 @@
   padding-top:2rem;
 }
 
-/* remove auto snap */
 .portfolio-window-content {
   scroll-snap-type: none;
 }
@@ -61,7 +58,6 @@
   color: #777777;
 }
 
-/* Title + subtitle */
 .case-title {
   margin: 1rem 0 0.2rem;
   font-size: 1.8rem;
@@ -145,12 +141,22 @@
   border: 0.2rem solid #000000;
   border-radius: 0.5rem;
 }
+.content-video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 1rem; 
+}
 
 @media (max-width:40rem) {
   .content-image {
     width: 90%;
   }
   .case-hero-card {
+    width: 90%;
+  }
+  .contetn-video {
     width: 90%;
   }
 }

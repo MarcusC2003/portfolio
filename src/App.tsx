@@ -7,6 +7,7 @@ import "./App.css";
 
 const App: React.FC = () => {
   return (
+    // https://www.geeksforgeeks.org/reactjs/react-router-dom-npm/
       <Router>
         <Routes>
           <Route path="/home" element={<Home />} />

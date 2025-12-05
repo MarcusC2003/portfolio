@@ -1,37 +1,36 @@
-header,section{
+header,
+section {
   scroll-snap-align: start;
-  
 }
+
 .window-content {
   scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
 }
 
-
 /* -------------------------- */
-/*      Intro Section      */
+/*      Intro Section         */
 /* -------------------------- */
 .intro {
   display: flex;
   flex-direction: row;
-
-  justify-content: center;  
-  align-items: center;      
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   gap: 3rem;
   font-family: var(--font-RobotoMono);
 }
 
-
-.intro-content{
+.intro-content {
   padding: 3rem;
   align-items: center;
   margin-bottom: 5rem;
   width: 35rem;
-
 }
+
 .intro-heading {
-  display:block;
+  display: block;
   margin: 0 0 1.5rem 0;
   font-size: 1.4rem;
   font-weight: 500;
@@ -41,7 +40,7 @@ header,section{
   margin: 0 0 2.5rem 0;
   font-size: 5rem;
   font-weight: 800;
-  display:block
+  display: block;
 }
 
 .intro-body {
@@ -49,7 +48,6 @@ header,section{
   font-size: 1.1rem;
   line-height: 2rem;
   font-weight: 400;
-
 }
 
 /* -------------------------- */
@@ -64,16 +62,17 @@ header,section{
   box-sizing: border-box;
 }
 
-.goals-grid {
+.goals-flex {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
   column-gap: 4rem;
 }
 
 .goals-path {
-  flex:1;
-  width: 100%;
+  flex: 1;
+  max-width: 30rem;
   height: auto;
   justify-self: center;
   align-self: center;
@@ -82,16 +81,16 @@ header,section{
 
 /* Card */
 .goals-card {
+  flex:2;
   position: relative;
   background-color: #ffffff;
   padding: 3rem;
   border-radius: 1.5rem;
   border: 0.2rem solid #000;
   box-shadow: 0.65rem 0.65rem 0 #000;
-  box-sizing: border-box;
   font-family: var(--font-RobotoMono);
   height: auto;
-  margin:3rem;
+  margin: 3rem;
 }
 
 /* Pin on card */
@@ -120,166 +119,151 @@ header,section{
 }
 
 /* -------------------------- */
-/*      Project Section      */
+/*      Project Section       */
 /* -------------------------- */
 
 .project-section {
-  display: grid;
-  grid-template-columns: 1.8fr 1fr;
-  gap: 1rem;
-  background-color: var(--color-purple);
   width: 100%;
-  height: fit-content;
-  
+  background-color: var(--color-purple);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
-/* --------  Left side -------- */
+.project-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;   
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+  height:100%;
+}
+
+/* -------- LEFT: Main Project Card -------- */
 
 .project-card {
-  justify-self: center;
-  align-self: center;
-  background: white;
+  background: #fff;
   border: 0.22rem solid #000;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
   padding: 2rem;
   box-shadow: 0.45rem 0.45rem 0 #000;
   font-family: var(--font-RobotoMono);
-  width: 73%;
-  margin-left:1rem;
+  margin:3rem 3rem;
 }
 
 .project-title {
   font-size: 2.5rem;
-  margin-top:0;
-  margin-bottom: 1.6rem;
+  margin: 0 0 1.6rem 0;
   font-weight: 700;
-  width: 30rem;
 }
 
-/* Preview Image */
 .project-image {
   border: 0.3rem solid #000;
   border-radius: 1rem;
-  width:100%;
-  height:100%;
-  justify-self: center;
-  align-self: center;
-  margin:0 auto
+  width: 90%;
+  height: auto;
+  margin-bottom: 1.6rem;
 }
 
-/* Description */
 .project-description {
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 1.6rem;
 }
 
-/* Tags */
 .project-tags {
-  display:inline-block;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
   padding: 0;
   margin: 0;
-  display: flex;
-  gap: 0.9rem;
-  flex-wrap: wrap;
 }
 
 .project-tag {
   background: #2ecc71;
-  color: #000;
+  border: 0.18rem solid #000;
   padding: 0.45rem 1rem;
   border-radius: 1rem;
-  border: 0.18rem solid #000;
-  font-size: 1rem;
   font-weight: 500;
-  font-family: var(--font-RobotoMono);
   box-shadow: 0.18rem 0.18rem 0 #000;
 }
 
-/* --------  Right content -------- */
+/* -------- right side -------- */
 
 .project-side {
-  text-align: center;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.project-info-container{
+.project-info-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom:5rem;
-  margin-right:3rem;
-
+  text-align: center;
 }
+
 .project-more-text {
   font-family: var(--font-JustMeAgainDownHere);
-  font-size: 3rem; 
+  font-size: 3rem;
   line-height: 1.2;
-  width:20rem;
-  margin-bottom:0rem;
+  margin: 0;
+  width: 18rem;
 }
 
 .project-arrow {
-  width: 3rem; 
+  width: 3rem;
   height: auto;
-  margin: 0.6rem auto 0.8rem;
-  display: block;
+  margin: 0.5rem 0 1rem;
 }
 
 .project-portfolio-link {
-  display: block;
   background: #fff;
-  padding: 0.5rem 1.5rem;
+  padding: 0.45rem 1.8rem;
   border-radius: 0.9rem;
   border: 0.22rem solid #000;
   font-family: var(--font-JustMeAgainDownHere);
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   box-shadow: 0.3rem 0.3rem 0 #000;
   text-decoration: none;
   color: #000;
-  width: 10rem;
-  transition: transform 0.12s ease;
-
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
 .project-portfolio-link:hover {
   transform: translateY(-0.25rem);
 }
+
 .project-portfolio-link:active {
-  transform: translateY(0.2rem);
-  box-shadow: 0rem 0rem 0.1rem #000;
-
+  transform: translateY(0.15rem);
+  box-shadow: none;
 }
-.project-portfolio-link:focus {
-  transform: translateY(-0.25rem);
-  border: var(--color-black) 0.3rem solid;
 
-}
 
 /* -------------------------- */
-/*      Interests Section    */
+/*      Interests Section     */
 /* -------------------------- */
 
 .interests-section {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: var(--color-cyan); 
+  background: var(--color-cyan);
   font-family: var(--font-RobotoMono);
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
-.interests-container{
+
+.interests-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16rem;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 .interests-text-card {
@@ -304,7 +288,7 @@ header,section{
   line-height: 1.7rem;
 }
 
-/* bottom: hand + cards */
+/*hand + cards */
 
 .interests-hand-wrapper {
   position: relative;
@@ -314,6 +298,7 @@ header,section{
 
 .interests-hand-base {
   position: absolute;
+  height:auto;
   width: 23em;
   bottom: 0;
   left: 5rem;
@@ -321,20 +306,22 @@ header,section{
 
 .interests-hand-thumb {
   position: absolute;
+  height:auto;
   width: 23rem;
   bottom: 0rem;
   left: 5rem;
   z-index: 3;
 }
+
 .card-list {
   position: absolute;
   width: 100%;
   height: 100%;
-  bottom: 1rem;
-  left: 1rem;
   z-index: 2;
 }
+
 /* cards */
+/* reference: https://www.w3schools.com/cssref/css3_pr_transform-origin.php */
 .interest-card {
   position: absolute;
   width: 13rem;
@@ -346,27 +333,34 @@ header,section{
   left: 4rem;
   bottom: 5rem;
   transform: rotate(-35deg);
+  height:auto;
+
 }
 
 .card-plants {
   left: 8rem;
   bottom: 7rem;
   transform: rotate(-15deg);
+  height:auto;
+
 }
 
 .card-pickleball {
   left: 11rem;
   bottom: 7rem;
   transform: rotate(15deg);
+  height:auto;
+
 }
 
 .card-cooking {
   left: 15rem;
   bottom: 5rem;
   transform: rotate(35deg);
+  height:auto;
+
 }
 
-/* Hover: card "sticks out" along its angle */
 .card-volleyball:hover {
   transform: rotate(-40deg) translateY(-2rem);
 }
@@ -383,96 +377,231 @@ header,section{
   transform: rotate(40deg) translateY(-2rem);
 }
 
-
-
-/*  -------------- Mediq queries ----------- */
-
-@media (max-width:67.5rem) {
+/* -------------- Media queries ----------- */
+@media(max-width: 106rem) {
+  section {
+  scroll-snap-align: none;
+}
+  .goals-section{
+    height: fit-content;
+  }
+  .goals-path{
+    width: 50%;
+  }
+  .goals-flex{
+    gap:1rem;
+  }
+   .goals-flex {
+    flex-direction: column;
+    row-gap: 3rem;
+    padding: 2rem;
+  }
+   .project-section {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+  .project-info-container {
+    margin: 0 0 4rem 0;
+  }
+  .project-more-text {
+    font-size: 2.5rem;
+    margin: 0 0 0 0;
+  }
+}
+@media (max-width: 67.5rem) {
   .intro {
     flex-direction: column;
     text-align: center;
-    height:fit-content;
+    height: fit-content;
     justify-content: flex-start;
-    gap:0;
-
+    gap: 0;
   }
 
   .intro-content {
     width: auto;
     margin-bottom: 0;
   }
-  .lightbulb{
-    margin:2rem 0 4rem 0;
+
+  .lightbulb {
+    margin: 2rem 0 4rem 0;
   }
 
-  .goals-grid {
-    grid-template-columns: 1fr;
+  .goals-flex {
+    flex-direction: column;
     row-gap: 3rem;
     padding: 2rem;
   }
+
   .goals-path {
     margin: 0;
     width: 50%;
   }
 
-  .project-section {
-    grid-template-columns: 1fr;
-    height: fit-content;
-  }
-  .project-info-container{
-    margin:0 0 3rem 0 ;
+
+  .interests-text-card {
+    width: 70%;
   }
 
-  .project-card {
-    width: 80%;
-    margin: 4rem  auto;
-  }
-  .interests-text-card{
-    width: 70%;
-    
-  }
   .project-more-text {
     font-size: 3rem;
-    margin:0;
+    margin: 0;
   }
+
   .interests-section {
     height: fit-content;
   }
-  .interests-container{
+
+  .interests-container {
     gap: 12rem;
   }
-  .interest-card{
-    width:11rem;
-    
-  }
-  .interests-hand-base{
-    width:15rem;
-    margin:0 0 0 3rem;
-    
-  }
-  .interests-hand-thumb{
-    width:15rem;
-    margin:0 0 0 3rem;
 
+  .interest-card {
+    width: 11rem;
+  }
+  .interests-hand-wrapper{
+    top:0rem;
+  }
+
+  .interests-hand-base {
+    width: 15rem;
+    margin: 0 0 0 3rem;
+  }
+
+  .interests-hand-thumb {
+    width: 15rem;
+    margin: 0 0 0 3rem;
   }
 }
-@media (max-width:43rem) {
- .interest-card{
+
+@media (max-width: 43rem) {
+  .goals-card {
+    width: 85%;
+    padding: 2rem 2rem;
+  }
+  .interest-card {
+    width: 7rem;
+  }
+
+  .interests-hand-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 22rem;
+    height: 14rem;
+    margin: 0 auto;
+  }
+
+  .card-list {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.4rem;
+  }
+
+  .interest-card {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform-origin: 50% 80%;
     width:6rem;
-    
   }
-  .interests-hand-base{
-    width:10rem;
-    margin:0 0 0 3rem;
-    
-  }
-  .interests-hand-thumb{
-    width:10rem;
-    margin:0 0 0 3rem;
 
+  .card-volleyball {
+    transform: rotate(-40deg);
+    left:7rem;
+    bottom:3rem;
   }
+
+  .card-plants {
+    transform: rotate(-15deg);
+    bottom:5rem;
+    left:2.5rem;
+  }
+
+  .card-pickleball {
+    transform: rotate(15deg);
+    bottom:5rem;
+    right:2rem;
+  }
+
+  .card-cooking {
+    transform: rotate(40deg);
+    bottom:3rem;
+    right:6rem;
+  }
+
+  .interests-hand-base,
+  .interests-hand-thumb {
+    width: 12rem;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+  }
+  .interests-hand-thumb {
+    z-index: 5;
+  }
+
   .project-image {
-    width: 90%;
+    width: 80%;
+  }
+  .project-card {
+    margin: 0.5rem auto;
+    box-shadow: 0.3rem 0.3rem 0 #000;
+    width: 85%;
+    padding: 1rem;
+  }
+  .project-title {
+    font-size: 2rem;
+  }
+  .goals-path {
+    width: 80%;
+  }
+}
+
+
+
+/* for project section */
+@media (max-width: 62rem) {
+  .project-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 3rem;
   }
 
+  .project-card {
+    max-width: 42rem;
+    width: 80;
+  }
+}
+
+@media (max-width: 37rem) {
+  .project-title {
+    font-size: 1.8rem;
+  }
+  .project-more-text {
+    font-size: 2rem;
+  }
+  .goals-card{
+    box-shadow: 0.3rem 0.3rem 0 #000;
+  }
+
+  .project-portfolio-link {
+    font-size: 2rem;
+  }
+  
+ .interests-hand-base {
+    width: 12rem;
+    height:auto;
+    margin: 0 0 0 0rem;
+  }
+
+  .interests-hand-thumb {
+    width: 12rem;
+    margin: 0 0 0 0rem;
+  }
+  
+  
 }

@@ -21,7 +21,6 @@ button,
   cursor: url("./cursor/cursor-pointer.png") 14 4, pointer;
 }
 
-/* window styling */
 
 body {
   font-family: var(--font-RobotoMono);
@@ -114,14 +113,12 @@ body {
   background-color: #e5e7eb;      
 }
 
-/* Window title */
 .window-title {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--color-black);
 }
 
-/* Window content */
 .window-content {
   flex: 1;
   background-color: #ffffff;
@@ -155,9 +152,14 @@ body {
     height: 85vh;
   }
 }
-@media (max-width: 22.5rem) {
+@media (max-width: 31rem) {
   .window {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
+    box-shadow: none;
   }
+  .window-content::-webkit-scrollbar {
+  display:none;
+
+}
 }

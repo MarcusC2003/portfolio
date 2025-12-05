@@ -17,7 +17,6 @@ import cardCookingImg from "../assets/images/home/Card-Cooking.png";
 import handBaseImg from "../assets/images/home/Hand.png";
 import handThumbImg from "../assets/images/home/Thumb.png";
 
-
 const Home: React.FC = () => {
   useEffect(() => {
     document.title = "Home";
@@ -48,7 +47,7 @@ const Home: React.FC = () => {
       </header>
 
       <section className="goals-section">
-        <div className="goals-grid">
+        <div className="goals-flex">
           <img
             src={goalPath}
             alt="Pathways to a red goals flag"
@@ -58,7 +57,7 @@ const Home: React.FC = () => {
           />
 
           <div className="goals-card">
-            <img src={goalPin} alt="push pin" className="goals-pin" />
+            <img src={goalPin} alt="push pin" className="goals-pin" width="83" height="100" />
 
             <h2 className="goals-title">My Future Goal</h2>
 
@@ -71,53 +70,52 @@ const Home: React.FC = () => {
         </div>
       </section>
       <section className="project-section">
-        <div className="project-card">
-          <h2 className="project-title">#recent_project</h2>
-
-          {/* Project preview image */}
-          <img
-            src={portfolioImage}
-            alt="Asana new feature proposal slide"
-            className="project-image"
-          />
-
-          {/* Description */}
-          <p className="project-description">
-            In this project, my team carried out user research and developed
-            mockups to propose a new feature for Asana.
-          </p>
-
-          {/* Tags */}
-          <ul className="project-tags">
-            <li className="project-tag">#ui</li>
-            <li className="project-tag">#ux</li>
-            <li className="project-tag">#user_research</li>
-            <li className="project-tag">#figma</li>
-          </ul>
-        </div>
-
-        {/* Right side “More projects” */}
-        <div className="project-side">
-          <div className="project-info-container">
-            <p className="project-more-text">
-              Check out more of my projects here
-            </p>
+        <div className="project-container">
+          <div className="project-card">
+            <h2 className="project-title">#recent_project</h2>
 
             <img
-              src={portfolioArrow}
-              alt="arrow pointing to portfolio button"
-              className="project-arrow"
+              src={portfolioImage}
+              alt="Asana new feature proposal slide"
+              className="project-image"
             />
 
-            <a className="project-portfolio-link" onClick={() => navigate("/portfolio")}>
-              My Portfolio
-            </a>
+            <p className="project-description">
+              In this project, my team carried out user research and developed
+              mockups to propose a new feature for Asana.
+            </p>
+
+            <ul className="project-tags">
+              <li className="project-tag">#ui</li>
+              <li className="project-tag">#ux</li>
+              <li className="project-tag">#user_research</li>
+              <li className="project-tag">#figma</li>
+            </ul>
+          </div>
+
+          <div className="project-side">
+            <div className="project-info-container">
+              <p className="project-more-text">
+                Check out more of my projects here
+              </p>
+
+              <img
+                src={portfolioArrow}
+                alt="arrow pointing to portfolio button"
+                className="project-arrow"
+                width="74"
+                height="17"
+              />
+
+              <a className="project-portfolio-link" tabIndex={0} onClick={() => navigate("/portfolio")} onKeyDown={(e) => {if (e.key === 'Enter') navigate("/portfolio")}}>
+                My Portfolio
+              </a>
+            </div>
           </div>
         </div>
       </section>
       <section className="interests-section">
         <div className="interests-container">
-          {/* left text card */}
           <div className="interests-text-card">
             <h2 className="interests-title">My Interests</h2>
             <p className="interests-text">
@@ -127,28 +125,36 @@ const Home: React.FC = () => {
             </p>
           </div>
 
-          {/* right card fan */}
+          {/*card fan */}
           <div className="interests-hand-wrapper">
             <div className="card-list">
               <img
                 src={cardVolleyballImg}
                 alt="Volleyball card"
                 className="interest-card card-volleyball"
+                width="276"
+                height="437"
               />
               <img
                 src={cardPlantsImg}
                 alt="Indoor plants card"
                 className="interest-card card-plants"
+                width="276"
+              height="437"
               />
               <img
                 src={cardPickleballImg}
                 alt="Pickleball card"
                 className="interest-card card-pickleball"
+                width="276"
+              height="437"
               />
               <img
                 src={cardCookingImg}
                 alt="Cooking card"
                 className="interest-card card-cooking"
+                width="276"
+              height="437"
               />
             </div>
 
@@ -156,11 +162,15 @@ const Home: React.FC = () => {
               src={handBaseImg}
               alt="Hand holding cards"
               className="interests-hand-base"
+              width="276"
+              height="437"
             />
             <img
               src={handThumbImg}
               alt="Thumb"
               className="interests-hand-thumb"
+              width="276"
+              height="437"
             />
           </div>
         </div>
