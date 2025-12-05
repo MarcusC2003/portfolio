@@ -3,6 +3,7 @@ import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 import "./App.css";
 
 const App: React.FC = () => {
@@ -12,7 +13,8 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="*" element={<Navigate to="/home" replace />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
     </Router>
   );

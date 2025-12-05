@@ -4,6 +4,7 @@ import "../styles/Navbar.css";
 
 import homeIcon from "../assets/icons/nav/home.png";
 import portfolioIcon from "../assets/icons/nav/portfolio.png";
+import contactIcon from "../assets/icons/nav/contact.png";
 
 const Navbar: React.FC = () => {
   return (
@@ -26,6 +27,15 @@ const Navbar: React.FC = () => {
         }
       >
         <img src={portfolioIcon} alt="Portfolio" className="navbar-icon" />
+      </NavLink>
+
+      <NavLink
+        to="/contact"
+        className={({ isActive }) =>  
+          `navbar-button ${isActive ? "navbar-button-active" : ""}`
+        }
+      >
+        <img src={contactIcon} alt="Contact" className="navbar-icon" />
       </NavLink>
 
     </nav>
