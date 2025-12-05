@@ -474,6 +474,12 @@ section {
   }
 }
 
+/* 
+  not sure how to position my cards in a way that 
+  does not produce  the warning: "Due to their dynamic nature,
+  CSS variables are currently not statically checked"
+
+*/
 @media (max-width: 43rem) {
   .goals-card {
     width: 85%;
@@ -573,7 +579,7 @@ section {
 
   .project-card {
     max-width: 42rem;
-    width: 80;
+    width: 80%;
   }
 }
 
